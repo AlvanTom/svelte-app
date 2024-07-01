@@ -7,3 +7,10 @@
 <div>
 	<slot />
 </div>
+
+<style>
+	div {
+		padding-left: 6em;
+		padding-right: 6em;
+	}
+</style>
