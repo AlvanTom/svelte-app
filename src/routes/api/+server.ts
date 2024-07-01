@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { pool } from 'src/lib/server/db';
+import { pool } from '@/lib/server/db';
 export async function GET() {
 	try {
 		const res = await pool.query('select version()');

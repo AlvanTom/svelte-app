@@ -1,11 +1,9 @@
 <script>
-	import Header from 'src/components/header.svelte';
+	import Header from '@/components/header.svelte';
+	import '../global.css';
 </script>
 
 <Header />
 <div>
 	<slot />
 </div>
-
-<style>
-</style>

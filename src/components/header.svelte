@@ -25,10 +25,16 @@
 	.nav-container {
 		display: flex;
 		gap: 50px;
-		border-bottom: 2px solid black;
 		padding-top: 1em;
 		padding-bottom: 1em;
 		padding-right: 1em;
 		justify-content: flex-end;
+		font-weight: bold;
+		background-color: var(--mantle);
+	}
+	a:visited,
+	a:link {
+		color: inherit;
+		text-decoration: none;
 	}
 </style>
