@@ -16,7 +16,7 @@
 </script>
 
 <div class="header">
-	Stabletables
+	<div class="logo">Stabletables</div>
 	<div class="nav-container">
 		{#each navItems as item}
 			<a class="nav-elements" href={item.href}>{item.name}</a>
@@ -31,10 +31,7 @@
 		font-weight: bold;
 	}
 	.header {
-		padding-top: 1em;
-		padding-bottom: 1em;
-		padding-right: 4em;
-		padding-left: 4em;
+		padding: 1em 4em;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -46,5 +43,15 @@
 	a:link {
 		color: inherit;
 		text-decoration: none;
+	}
+	@media (max-width: 768px) {
+		.logo {
+			display: none;
+		}
+		.header {
+			padding: 0.5em 0;
+			justify-content: center;
+			font-size: large;
+		}
 	}
 </style>

@@ -24,3 +24,11 @@
 * {
 	margin: 0;
 }
+main {
+	padding: 0px 6em;
+}
+@media (max-width: 768px) {
+	main {
+		padding: 0px 1em;
+	}
+}

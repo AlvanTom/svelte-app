@@ -3,14 +3,20 @@
 	import '../global.css';
 </script>
 
-<Header />
 <div>
+	<Header />
 	<slot />
 </div>
 
 <style>
 	div {
-		padding-left: 6em;
-		padding-right: 6em;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+	@media (max-width: 768px) {
+		div {
+			flex-direction: column-reverse;
+		}
 	}
 </style>
