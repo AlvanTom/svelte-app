@@ -18,6 +18,8 @@
 	--text: #cfd6f1;
 	--subtext-0: #a7adc6;
 	--subtext-1: #bbc2dc;
+
+	--lg-br: 20px;
 	color: var(--text);
 	background-color: var(--base);
 }

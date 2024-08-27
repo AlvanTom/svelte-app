@@ -17,6 +17,7 @@
 	@media (max-width: 768px) {
 		div {
 			flex-direction: column-reverse;
+			justify-content: space-between;
 		}
 	}
 </style>

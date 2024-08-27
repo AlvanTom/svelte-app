@@ -11,6 +11,10 @@
 		{
 			name: 'Projects',
 			href: '/projects'
+		},
+		{
+			name: 'Task One',
+			href: '/task-one'
 		}
 	];
 </script>
