@@ -66,7 +66,7 @@
 		top: 0;
 		left: 0;
 		height: 100dvh;
-		width: 100dvw;
+		width: 100%;
 		position: absolute;
 		background-size: 3.5dvh 3.5dvh;
 		background-image: linear-gradient(to right, #8878b9 1px, transparent 1px),
