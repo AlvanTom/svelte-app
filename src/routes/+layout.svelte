@@ -1,22 +1,9 @@
 <script>
-	import Header from '@/components/header.svelte';
 	import '../global.css';
 </script>
 
-<div>
-	<Header />
-	<slot />
-</div>
+<head>
+	<title> Alvan Tom's Website</title>
+</head>
 
-<style>
-	div {
-		display: flex;
-		flex-direction: column;
-		height: 100dvh;
-	}
-	@media (max-width: 768px) {
-		div {
-			flex-direction: column-reverse;
-		}
-	}
-</style>
+<slot />
