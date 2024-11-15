@@ -4,6 +4,7 @@
 	import GithubIcon from '@/components/GithubIcon.svelte';
 	import EmailIcon from '@/components/EmailIcon.svelte';
 	import LinkedInIcon from '@/components/LinkedInIcon.svelte';
+	import pfp from '@/img/pfp.jpg';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
@@ -58,7 +59,7 @@
 					<InstagramIcon />
 				</div>
 			</div>
-			<img class="pfp" src="src/img/pfp.jpg" alt="alvan-profile" />
+			<img class="pfp" src={pfp} alt="alvan-profile" />
 		</div>
 	{/if}
 </main>
