@@ -1,5 +1,4 @@
 <script>
-	import { fade } from 'svelte/transition';
 	import { tweened } from 'svelte/motion';
 	import { cubicInOut, linear } from 'svelte/easing';
 
@@ -32,10 +31,7 @@
 	}
 </script>
 
-<div class="background-grid-wrapper">
-	<div class="background-grid" style="opacity: {$opacity}" />
-</div>
-<svg width="auto" height="auto" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100dvh" xmlns="http://www.w3.org/2000/svg">
 	<defs>
 		<linearGradient id="linGrad" gradientTransform="rotate(45)">
 			<stop offset={`${$sweep < 20 ? 0 : $sweep - 20}%`} stop-color="black" />
@@ -55,12 +51,13 @@
 	</defs>
 </svg>
 
+<div class="background-grid" style="opacity: {$opacity}" />
+
 <style>
 	svg {
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		pointer-events: none;
 	}
 	.background-grid {
 		top: 0;

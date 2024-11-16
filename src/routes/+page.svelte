@@ -5,7 +5,7 @@
 	import EmailIcon from '@/components/EmailIcon.svelte';
 	import LinkedInIcon from '@/components/LinkedInIcon.svelte';
 	import pfp from '@/img/pfp.jpg';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { cubicInOut, linear } from 'svelte/easing';
@@ -48,10 +48,12 @@
 	<BackgroundGrid />
 	{#if showTransitions}
 		<MadeWithSvelte />
-		<div class="primary-content">
+		<div transition:fade={{ duration: 1000 }} class="primary-content">
 			<div class="header">
-				<h transition:fade={{ duration: 1000 }}>Alvan Tom</h>
-				<h1><span style="color: #69369F">Front-End Developer </span>based in 🇨🇦</h1>
+				<h>Alvan Tom</h>
+				<h1>
+					<span style="color: #69369F">Front-End Developer </span>based in 🇨🇦
+				</h1>
 				<div class="icon-list">
 					<LinkedInIcon />
 					<GithubIcon />
